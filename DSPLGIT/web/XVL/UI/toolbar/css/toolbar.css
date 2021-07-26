@@ -1,0 +1,91 @@
+body {
+	font-family: Monospace;
+	background-color: beige;
+	color: #ffffff;
+	margin: 0px;
+	overflow: hidden;
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-size: 15px;
+}
+
+#menu_toolbar_2 {
+	position:absolute;
+    width:42px;
+	top: 10%;
+	left: 90%;
+}
+#menu_toolbar_1 {
+	position:absolute;
+	top: 2%;
+	left: 30%;
+}
+
+#menu_toolbar_2_header,
+#menu_toolbar_1_header{
+	background-color: #78808c;
+}
+#menu_toolbar_1_header{
+	display: inline-block;
+	width: 15px;
+	height: 42px;
+	position: relative;
+	left: 4px;
+}
+#menu_toolbar_1_header_oc{
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	margin: 4px 0 0 3px;
+}
+#menu_toolbar_2_header{
+	height: 15px;
+	width: 42px;
+    position: relative;
+}
+#menu_toolbar_2_header_oc {
+	cursor: pointer;
+	margin: 0 0 5px 4px;
+}
+#menu_toolbar_2_body,
+#menu_toolbar_1_body {
+	display: inline-block;
+	background-color:rgba(255, 255, 255, 0.7);
+}
+#menu_toolbar_1_body {
+	width: 715px;
+	height: 42px;
+	border-left: 1px solid #FFFFFF;
+}
+#menu_toolbar_2_body {
+	width: 42px;
+	height: 420px;    
+	border-top: 1px solid #FFFFFF;
+}
+
+.button {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	float: left;
+	padding: 3px;
+	margin: 4px;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: #CCCCCC;
+	border-radius: 10%;
+}
+.button.selected {
+	border: 1px solid #EDBE5E;
+	border-radius: 10%;
+	width: 26px;
+	height: 26px;
+}
+
+#view_mode_wt_pan,
+#view_mode_walk,
+#view_mode_look_around,
+#view_mode_wt_region,
+#view_mode_wt_backAndForth{
+	display: none;
+}

@@ -1,0 +1,309 @@
+body {
+	font-family: Monospace;
+	background-color: beige;
+	color: #ffffff;
+	margin: 0px;
+	overflow: hidden;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 15px;
+}
+
+/**
+ *	Basic Layout Theme
+ * 
+ *	This theme uses the default layout class-names for all classes
+ *	Add any 'custom class-names', from options: paneClass, resizerClass, togglerClass
+ */
+
+/* all 'panes' */ 
+.ui-layout-pane {
+	height: 100%;
+	background: #FFF; 
+	border: 0px solid #BBB; 
+	padding: 0px; 
+	overflow: hidden;
+}
+
+/* all 'resizer-bars' */ 
+.ui-layout-resizer {
+	background: #DDD; 
+} 
+
+/* all 'toggler-buttons' */ 
+.ui-layout-toggler {
+	background: #AAA; 
+}
+
+#web3dPlayer_main {
+	z-index: -2;
+}
+#assyTree {
+	border: none;
+	background-color: rgba(192,192,192,0.5);
+	padding: 0;
+	overflow: visible;
+}
+#assyTree_header {
+	border: none;
+	background-color: rgba(68,102,102,0.5);
+	padding: 0;
+	overflow: visible;
+}
+#assyTree_body {
+	border: none;
+	background-color: rgba(192,192,192,1);
+	padding: 0;
+	overflow: visible;
+}
+#tree {
+	border: none;
+	background-color: rgba(192,192,192,1);
+	padding: 0;
+	overflow: visible;
+}
+#propTable_header {
+	border: none;
+	background-color: rgba(68,102,102,0.5);
+	padding: 0;
+	overflow: visible;
+}
+#propTable .body {
+	border: none;
+	background-color: rgba(192,192,192,0.5);
+	padding: 0;
+	overflow: visible;
+}
+#toolbar_1 {
+	background-color: #78808c;
+}
+#toolbar_1_header {
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	background-color:#78808c;
+}
+#toolbar_1_body {
+	border: 1px solid #FFFFFF;
+	background-color:rgba(255, 255, 255, 0.7);
+}
+
+#toolbar_2 {
+	background-color: #78808c;
+}
+#toolbar_2_header {
+	float:left;
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	background-color:#78808c;
+}
+#toolbar_2_body {
+	float:left;
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	background-color:rgba(255, 255, 255, 0.7);
+}
+
+#toolbar_3 {
+	background-color: #78808c;
+}
+#toolbar_3_header {
+	positon:relative;
+	float:left;
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	background-color:#78808c;
+}
+#toolbar_3_body {
+	float:left;
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	background-color:rgba(255, 255, 255, 0.7);
+	z-index:100;
+}
+
+#toolbar_4 {
+	background-color: #78808c;
+}
+#toolbar_4_header {
+	float:left;
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	background-color:#78808c;
+}
+#toolbar_4_body {
+	float:left;
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	background-color:rgba(255, 255, 255, 0.7);
+	z-index:100;
+}
+
+.button {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	float: left;
+	padding: 3px;
+	margin: 4px;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: #CCCCCC;
+	border-radius: 10%;
+}
+.button.selected {
+	border: 1px solid #EDBE5E;
+	border-radius: 10%;
+	width: 26px;
+	height: 26px;
+}
+#progress_waku {
+    z-index: 1000;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+}
+#progress {
+    height: 15px;
+    width: 250px;
+    position: relative;
+    top: 50%;
+    left:0%;
+    margin: -10px auto 0 auto;
+    border-radius: 0;
+}
+#progress.ui-widget-content {
+    background: #46454D;
+    border: 2px solid #46454D;
+}
+#progress_waku span {
+    display: block;
+    position: relative;
+    top: 50%;
+    margin: 5px auto 0 auto;
+    width: 100px;
+    text-align: center;
+}
+
+#progress .ui-corner-left {
+    border-radius: 0 2px 2px 0;
+}
+#progress .ui-widget-header {
+    background: #F1C447;
+    border: none;
+    margin-top: 0;
+}
+
+.switch [type=checkbox] {
+    display: none;
+}
+.switch {
+    border-radius: 15px;
+    display: inline-block;
+    height: 14px;
+    overflow: hidden;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 28px;
+}
+.switch .label {
+    cursor: pointer;
+    margin-left: -27px;
+    -ms-transition: margin .1s;
+    -webkit-transition: margin .1s;
+    transition: margin .1s;
+    white-space: nowrap;
+}
+.switch :checked + .label {
+    margin-left: 0;
+}
+.switch .on,
+.switch .off {
+    display: inline-block;
+    height: 14px;
+    line-height: 15px;
+    text-align: center;
+    width: 28px;
+}
+.switch .on {
+    background-color: #EDBE5E;
+}
+.switch .off {
+    background-color: #AEAEAE;
+
+}
+.switch .separator {
+	-ms-transition: margin .1s;
+    -webkit-transition: margin .1s;
+    transition: margin .1s;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 0 #444444;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 -13px 0 0 ;
+    position: relative;
+    top: -1px;
+}
+.switch :checked + .label .separator:NTH-CHILD(2) {
+    margin: 0 0 0 -14px;
+}
+.switch :checked + .label .off:NTH-CHILD(3) {
+    margin-left: 2px;
+}
+.proptitle {
+	width: 30%;
+    background-color: #555555;
+}
+.propval {
+	width: 70%;
+    background-color: #666666;
+}
+#partslist_header {
+	border: none;
+	background-color: rgba(68,102,102,0.5);
+	padding: 0;
+	overflow: visible;
+}
+#web3dPlayer_part_header {
+	border: none;
+	background-color: rgba(68,102,102,0.5);
+	padding: 0;
+	overflow: visible;
+}
+#web3dPlayer_all_header {
+	border: none;
+	background-color: rgba(68,102,102,0.5);
+	padding: 0;
+	overflow: visible;
+}
+
+#search_header {
+	border: none;
+	background-color: rgba(68,102,102,0.5);
+	padding: 0;
+	overflow: visible;
+}
+#search_body {
+	border: none;
+	background-color: rgba(192,192,192,1);
+	padding: 0;
+	overflow: visible;
+	color: #000000;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+#search_form,
+#search_result {
+	padding: 4px;
+}
+#search_key {
+	margin-right: 4px;
+}
+

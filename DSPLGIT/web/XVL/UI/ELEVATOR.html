@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>ui</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="common/css/jquery-ui.min.css" media="all">
+        <link rel="stylesheet" type="text/css" href="common/css/drag-drop.css"/>
+        <link rel="stylesheet" type="text/css" href="common/css/web3d.css"/>
+		<link rel="stylesheet" type="text/css" href="dynatree/css/dynatree/ui.dynatree.css">	
+		<link rel="stylesheet" type="text/css" href="dynatree/css/perfect-scrollbar/perfect-scrollbar.min.css">
+		<link rel="stylesheet" type="text/css" href="dynatree/css/dynatree/dynatree-custom.css">
+		<link rel="stylesheet" type="text/css" href="dynatree/css/perfect-scrollbar/perfect-scrollbar-custom.css">
+        
+        <link rel="stylesheet" href="toolbar/css/toolbar.css"/>
+        
+        <script src="common/js/jquery-1.10.2.min.js"></script>
+        <script src="common/js/jquery-ui-1.10.3.min.js"></script>
+        <script src="common/js/util.js"></script>
+		<script src="dynatree/js/dynatree/jquery.dynatree.js"></script>
+		<script src="dynatree/js/perfect-scrollbar/perfect-scrollbar.jquery.min.js"></script>
+	
+      
+        <script>
+        	id  = 'PLGIT';
+        	url = '/UI/models/ELEVATOR/ELEVATOR.json';
+        </script>
+        
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: beige;
+				color: #000000;
+				margin: 0px;
+				overflow: hidden;
+				font-family: "Segoe UI",Arial,sans-serif;
+				font-size: 15px;
+			}
+            
+			#container {
+				position: absolute;
+				top: 0px;
+				width:100%;
+				height:100%;
+				z-index: -1;
+			}
+            
+            #progress_waku {
+                z-index: 1000;
+                position: absolute;
+                top: 51px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                display: none;
+            }
+            #progress {
+                height: 15px;
+                width: 250px;
+                position: relative;
+                top: 50%;
+                margin: -10px auto 0 auto;
+                border-radius: 0;
+            }
+            #progress.ui-widget-content {
+                background: #46454D;
+                border: 2px solid #46454D;
+            }
+            #progress_waku span {
+                display: block;
+                position: relative;
+                top: 50%;
+                margin: 5px auto 0 auto;
+                width: 100px;
+                text-align: center;
+            }
+
+            #progress .ui-corner-left {
+                border-radius: 0 2px 2px 0;
+            }
+            #progress .ui-widget-header {
+                background: #F1C447;
+                border: none;
+                margin-top: 0;
+            }
+            
+            #tool_bar_property {
+                position: absolute;
+                width:280px;
+                left:10px;
+                height: 100px;
+                bottom:20px;
+                background-color:rgba(255, 255, 255, 0.7);
+                font-size: 12px;
+                color: #000000;
+                padding: 10px;
+            }
+            #tool_bar_property td {
+                font-weight: bold;
+            }            
+		</style>            
+
+	</head>
+
+	<body>
+		<div id="center" style="float: left; width: 100%; height: 100%; position: absolute; margin: 0px; left: auto; right: auto; top: auto; bottom: auto; z-index: 0; display: block; visibility: visible;;">
+			<div id="container"></div>
+			<div id="assyTree" class="drag-drop" style="position: absolute; width: 20%; height: 85%; left: 1%; top: 5%;"></div>
+			
+			<div id="menu_toolbar_1">
+				<div id="menu_toolbar_1_header" class="drag-drop"><img id="menu_toolbar_1_header_oc" src="toolbar/img/open-yoko.png"></div>
+				<div id="menu_toolbar_1_body">
+					<img class="button" id="view_mode_viewer_changeMode" src="toolbar/img/svg/icon-walkthrough.svg">
+					<img class="button" id="view_mode_viewer_pan" src="toolbar/img/svg/icon-pan.svg">
+					<img class="button selected" id="view_mode_viewer_rotate" src="toolbar/img/svg/icon-rotate.svg">
+					<img class="button" id="view_mode_viewer_zoom" src="toolbar/img/svg/icon-zoom.svg">
+					<img class="button" id="view_mode_viewer_region" src="toolbar/img/svg/icon-expansion.svg">
+	                <img class="button" id="view_mode_wt_pan" src="toolbar/img/svg/icon-wt_pan.svg">
+	                <img class="button" id="view_mode_walk" src="toolbar/img/svg/icon-walk.svg">
+	                <img class="button" id="view_mode_look_around" src="toolbar/img/svg/icon-look_around.svg">
+					<img class="button" id="view_mode_wt_region" src="toolbar/img/svg/icon-expansion.svg">
+	                <img class="button" id="view_mode_wt_backAndForth" src="toolbar/img/svg/icon-wt_backAndForth.svg">
+	                
+					<img class="button" id="view_mode_viewer_fit" src="toolbar/img/svg/icon-areafit.svg">
+	                
+					<img class="button" id="view_mode_viewer_gazingpoint" src="toolbar/img/svg/icon-ViewTarget.svg">
+					<img class="button" id="rotateViewLeft" src="toolbar/img/svg/icon-Rotate_Left.svg">
+					<img class="button" id="rotateViewRight" src="toolbar/img/svg/icon-Rotate_Right.svg">
+					<img class="button" id="view_mode_viewer_pickTrans" src="toolbar/img/svg/icon-sel_trans_sel.svg">
+					<img class="button" id="view_mode_viewer_pickTransNot" src="toolbar/img/svg/icon-sel_trans_nosel.svg">
+	                <img class="button" id="view_mode_viewer_fixUp" src="toolbar/img/svg/icon-fixUp.svg">
+					<img class="button" id="view_mode_viewer_changeDisplay" src="toolbar/img/svg/icon-Change_Display.svg">
+					<img class="button" id="view_mode_viewer_home" src="toolbar/img/svg/icon-Home.svg">
+					<img class="button" id="view_mode_viewer_wire" src="toolbar/img/svg/icon-wire.svg">
+					<img class="button" id="view_mode_viewer_shading" src="toolbar/img/svg/icon-shading.svg">
+					<img class="button" id="view_mode_viewer_wireshading" src="toolbar/img/svg/icon-wireshading.svg">
+				</div>          
+			</div>
+	        
+			<div id="menu_toolbar_2">
+				<div id="menu_toolbar_2_header" class="drag-drop"><img id="menu_toolbar_2_header_oc" src="toolbar/img/open-tate.png"></div>
+				<div id="menu_toolbar_2_body">
+					<img class="button" id="viewFront" src="toolbar/img/svg/icon-view1.svg">
+					<img class="button" id="viewBack" src="toolbar/img/svg/icon-view2.svg">
+					<img class="button" id="viewRight" src="toolbar/img/svg/icon-view3.svg">
+					<img class="button" id="viewLeft" src="toolbar/img/svg/icon-view4.svg">
+					<img class="button" id="viewTop" src="toolbar/img/svg/icon-view5.svg">
+					<img class="button" id="viewBottom" src="toolbar/img/svg/icon-view6.svg">
+					<img class="button" id="viewIsometric1" src="toolbar/img/svg/icon-view7.svg">
+					<img class="button" id="viewIsometric2" src="toolbar/img/svg/icon-view8.svg">
+					<img class="button" id="viewIsometric3" src="toolbar/img/svg/icon-view9.svg">
+					<img class="button" id="viewIsometric4" src="toolbar/img/svg/icon-view10.svg">
+				</div>
+			</div>			
+		</div>
+		<div id="progress_waku">
+			<div id="progress"></div>
+			<span>0%</span>
+		</div>
+        
+        <script src="ltplayer.js"></script>
+        
+        <script src="assytree.js"></script>
+        <script src="controller.js"></script>
+        <script src="view3D.js"></script>
+        <script src="resource.js"></script>
+        <script src="toolbar.js"></script>
+
+		<script src="main.js"></script>
+        
+        <script src="common/js/drag-drop.js"></script>
+        <script type="text/javascript" src="/UI/web3.js"></script>
+
+	</body>
+</html>
+
+	
+
+	
+

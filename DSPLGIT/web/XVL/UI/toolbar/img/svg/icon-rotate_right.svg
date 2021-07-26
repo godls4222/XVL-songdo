@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 28 28;"
+   viewBox="0 0 28 28"
+   y="0px"
+   x="0px"
+   id="レイヤー_1"
+   version="1.1"><metadata
+     id="metadata5344"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs5342" /><style
+     id="style5322"
+     type="text/css">
+	.st0{fill:#303030;}
+</style><g
+     transform="matrix(0.82432399,0,0,0.80139307,4.6314477,9.6189306)"
+     id="g5336"><g
+       transform="matrix(-1,0,0,1,22.968062,0)"
+       id="g8390"><g
+         id="g5962"
+         transform="matrix(1.0869565,0,0,1.0869565,-0.03083216,-2.4707954)"><path
+           id="path5896-6"
+           d="m 14.703409,-1.5661726 a 11.003742,11.029617 0 0 0 -11.0033338,11.030597 11.003742,11.029617 0 0 0 0.02843,0.5922296 l 2.80059,0 a 8.1942759,8.428746 0 0 1 -0.01895,-0.5922296 8.1942759,8.428746 0 0 1 8.1932658,-8.430144 8.1942759,8.428746 0 0 1 0.116099,0.00731 l 0,-2.6028891 a 11.003742,11.029617 0 0 0 -0.116099,-0.0049 z"
+           style="fill:#303030;fill-opacity:1;stroke:none;stroke-width:1.09399998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.93999958;stroke-opacity:1" /><path
+           id="polygon5338-6-6"
+           d="M 5.5175732,9.5981389 1.9104722,5.887826 0.1894942,7.658049 5.4220842,13.040361 10.73467,7.575763 9.1083252,5.902882 Z"
+           style="fill:#303030" /></g><rect
+         style="fill:#303030;fill-opacity:1;stroke:none;stroke-width:1.09399998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.93999958;stroke-opacity:1"
+         id="rect5966"
+         width="4.6933346"
+         height="29.609459"
+         x="20.726772"
+         y="-8.8937693" /><rect
+         style="fill:#303030;fill-opacity:1;stroke:none;stroke-width:1.09399998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.93999958;stroke-opacity:1"
+         id="rect5966-3"
+         width="4.8276291"
+         height="23.466675"
+         x="-20.715689"
+         y="-2.4520447"
+         transform="matrix(0,-1,1,0,0,0)" /></g></g></svg>

@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+#tree {
+	/*  ¨ä  -     ¸ã  */
+	height: calc(100% - 5px);
+	margin: 5px 0 0 10px;
+}
+
+span.dynatree-connector {
+/* 	width: 32px; */
+}
+
+span.dynatree-checkbox {
+    margin-left: 0;
+}
+
+ul.dynatree-container {
+	border: none;
+	background-color: rgba(192,192,192,0.5);
+	padding: 0;
+	overflow: visible;
+}
+
+ul.dynatree-container li {
+	padding: 0 0 0 0;
+}
+
+span.dynatree-active a {
+    background-color: #4D4D4D !important;
+    padding-right: 8px;
+}
+span.dynatree-selected a {
+    color: black;
+    font-style: normal;
+}
+
+ul.dynatree-container a:hover {
+	background-color: transparent;
+}
+
+span.dynatree-active a
+{
+	background-color: #3399ff !important;
+	color: white !important;  @ IE6 
+}
